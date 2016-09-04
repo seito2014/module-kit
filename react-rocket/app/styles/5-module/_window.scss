@@ -19,14 +19,13 @@
         display: inline-block;
         vertical-align: middle;
         position: relative;
-        top: -3px;
+        top: -2px;
     }
     &-area {
+        width: 100%;
         padding: 5px;
-        code {
-            display: block;
-            color: #fff;
-            text-align: left;
-        }
+        display: block;
+        color: #fff;
+        text-align: left;
     }
 }

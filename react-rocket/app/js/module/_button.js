@@ -1,14 +1,12 @@
 import React from 'react';
 
-console.log(React);
-
 class Button extends React.Component {
     constructor(props) {
         super(props);
     }
 
     onClick(){
-        window.alert('Hello!')
+        window.alert('hi');
     }
 
     render() {

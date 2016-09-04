@@ -11,4 +11,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Button from './module/_button';
 
-ReactDOM.render(<Button className="button" />, document.getElementById('app'));
+let windowElm = document.getElementsByClassName('window');
+let windowElmLength = windowElm.length;
+
+function renderElm(elm){
+    for(let i = 0; i < windowElmLength - 1; i++){
+        let targetName = 'target="#js-area-' + i + '"';
+        ReactDOM.render(<Button className="button" />, elm[i]);
+    }
+}
+renderElm(document.getElementsByClassName('js-button'));

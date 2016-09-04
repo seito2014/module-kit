@@ -3,15 +3,10 @@
         <h1 class="window-heading">
             <%= winArray[iWin].heading %>
         </h1>
-        <div class="window-button">
-            <% if(iWin !== 0){ %>
-            <% include _button %>
-            <% } %>
+        <div class="window-button<% if(iWin !== 0){ %> js-button<% } %>">
         </div>
     </header>
-    <div class="window-area">
-        <code>
-            <%- winArray[iWin].code %>
-        </code>
-    </div>
+    <textarea class="window-area" name="" id="js-area-<%= [iWin] %>" cols="30" rows="10">
+        <%- winArray[iWin].code %>
+    </textarea>
 </section>

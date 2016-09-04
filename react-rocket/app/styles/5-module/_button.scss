@@ -3,15 +3,13 @@
     color: #fff;
     background-color: $color-main;
     border-radius: 5px;
-    padding: 5px 15px;
+    padding: 4px 15px 5px;
     line-height: 1;
-    box-shadow: 0 3px 0 darken($color-main,20%);
-    transition-property: box-shadow, transform;
+    transition-property: background-color;
     transition-duration: $duration;
     transition-timing-function: $easing;
     &:hover {
         text-decoration: none;
-        transform: translate3d(0, 3px, 0);
-        box-shadow: 0 0 0 darken($color-main,20%);
+        background-color: darken($color-main, 10%);
     }
 }
