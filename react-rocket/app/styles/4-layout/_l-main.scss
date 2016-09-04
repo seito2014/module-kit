@@ -1,0 +1,27 @@
+/*
+l-main
+*/
+
+.l-main {
+    float: left;
+    width: 80%;
+    height: 100%;
+
+    &-inner {
+        height: 100%;
+
+        .l-grid-inner {
+            height: 100%;
+
+            .l-grid-item {
+                height: 50%;
+                border-top: 2px solid #ccc;
+                border-right: 2px solid #ccc;
+                &:nth-child(1),
+                &:nth-child(2) {
+                    border-top: 0;
+                }
+            }
+        }
+    }
+}

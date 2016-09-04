@@ -1,0 +1,32 @@
+<% include const/_const %>
+<%
+var id = "index";
+var title = "";
+var description = "sample text,sample text";
+var keywords = "word1,word2,word3";
+var type = "blog";
+%>
+<% include metadata/_head %>
+
+<!--start l-contents-->
+<div id="app"></div>
+
+<div class="l-container u-clear">
+    <main class="l-main">
+        <div class="l-main-inner l-grid l-grid-col2">
+            <ul class="l-grid-inner">
+                <% for(var iWin = 0; iWin < winArray.length; iWin++) { %>
+                <li class="l-grid-item">
+                    <% include module/_window %>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </main>
+    <aside class="l-sidebar">
+        <% include module/_sidebar %>
+    </aside>
+</div>
+<!--end l-contents-->
+
+<% include metadata/_script %>

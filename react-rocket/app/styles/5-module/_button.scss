@@ -1,0 +1,17 @@
+.button {
+    display: inline-block;
+    color: #fff;
+    background-color: $color-main;
+    border-radius: 5px;
+    padding: 5px 15px;
+    line-height: 1;
+    box-shadow: 0 3px 0 darken($color-main,20%);
+    transition-property: box-shadow, transform;
+    transition-duration: $duration;
+    transition-timing-function: $easing;
+    &:hover {
+        text-decoration: none;
+        transform: translate3d(0, 3px, 0);
+        box-shadow: 0 0 0 darken($color-main,20%);
+    }
+}

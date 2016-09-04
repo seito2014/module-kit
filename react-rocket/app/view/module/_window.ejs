@@ -1,0 +1,17 @@
+<section class="window">
+    <header class="window-header">
+        <h1 class="window-heading">
+            <%= winArray[iWin].heading %>
+        </h1>
+        <div class="window-button">
+            <% if(iWin !== 0){ %>
+            <% include _button %>
+            <% } %>
+        </div>
+    </header>
+    <div class="window-area">
+        <code>
+            <%- winArray[iWin].code %>
+        </code>
+    </div>
+</section>
